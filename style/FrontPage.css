@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+/* Header */
+
+header {
+  background: #ffffff;
+  width: 1440px;
+  height: 56px;
+  left: 1px;
+  top: -0.4px;
+  box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
+  position: absolute;
+}
+
+/* Header Home */
+
+header div {
+  display: flex;
+}
+header .Home p {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #f17228;
+  flex: none;
+  margin: 0;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+header .Home img {
+  height: 40px;
+  width: 40px;
+}
+
+header .HeaderMenus ul li {
+  list-style: none;
+  display: flex;
+}
+
+header .HeaderMenus .coloredMenu {
+  color: #f17228;
+}
+.searchBox {
+  background-image: url(../images/header/searchIcon.png);
+  background-repeat: no-repeat;
+}
