@@ -1,5 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
 .footer1 {
   width: 100%;
   height: 384px;
-  background-color: blueviolet;
+  background-image: url(../images/footer/background.png);
+  justify-content: space-evenly;
+  font-family: "Poppins";
+  color: #ffffff;
+}
+#footerLogo {
+  width: 12.22vw;
+  height: 10.416%;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+.footer1 hr {
+  width: 83.33vw;
+  border: 1px solid #ffffff;
+}
+
+#footerTop {
+  display: flex;
+  justify-content: space-around;
+}
+#list1 {
+  display: flex;
+  flex-direction: column;
+}
+#list2 {
+  display: flex;
+  flex-direction: column;
+}
+#footerBottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+#bottomRight {
+  text-align: right;
 }
