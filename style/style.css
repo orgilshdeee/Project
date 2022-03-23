@@ -7,3 +7,11 @@
   max-width: 1440px;
   margin: auto;
 } */
+
+.contents {
+  max-width: 1440px;
+  margin: auto;
+}
+.contents hr {
+  max-width: 1440px;
+}

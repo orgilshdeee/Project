@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
 
 header {
-  width: 100%;
+  width: 83.3%;
   height: 56px;
   font-family: "Poppins";
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #logo {
   display: flex;
@@ -68,7 +68,6 @@ header {
   display: flex;
 }
 #basLog #login {
-  margin: auto;
   display: flex;
 }
 #basLog a {
