@@ -12,7 +12,8 @@
 }
 #featuresBox {
   width: 83.33vw;
-  height: 61.29%;
+  /* height: 61.29%; */
+  height: 152px;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
   border-radius: 30px;
