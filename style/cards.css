@@ -30,12 +30,13 @@
   background: #f17228;
   display: flex;
   justify-content: space-evenly;
+  color: #ffffff;
 }
 .seeAllButton img {
   margin-top: auto;
   margin-bottom: auto;
 }
-.cardOnSale {
+.cardsRow {
   width: 83.3vw;
   height: 448px;
   display: flex;
