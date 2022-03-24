@@ -27,10 +27,11 @@ header {
   font-weight: 500;
   color: #000000;
 }
-#coloredText {
-  color: #f17228 !important;
-  font-weight: 700 !important;
+#menu a:hover {
+  color: #f17228;
+  transition: 0.2s;
 }
+
 #searchBox {
   align-items: center;
   margin-top: auto;
@@ -45,7 +46,8 @@ header {
   border: 1px solid #fbc5a6;
   background-image: url(/images/header/searchIcon.png);
   background-repeat: no-repeat;
-  background-position: 10% 50%;
+  background-position: 5% 50%;
+  padding-left: 12%;
 }
 
 #searchBox input::placeholder {
@@ -67,9 +69,9 @@ header {
   margin: auto;
   display: flex;
 }
-#basLog #login {
+/* #basLog #login {
   display: flex;
-}
+} */
 #basLog a {
   text-decoration: none;
   color: #f17228;

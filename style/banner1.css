@@ -5,12 +5,27 @@
   height: 496px;
   background-image: url(../images/banner/background.png);
 }
-.banner1 .contents {
-  width: 83.3%;
+#bannerTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Poppins";
+}
+#bannerBottom {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#bannerBottom button {
+  margin: 0px 5px;
+  width: 10px;
+  height: 8px;
+  background-color: #fbc5a6;
+}
+#bannerBottom button:hover {
+  transition: 0.3s;
+  background-color: #f17228;
+  width: 21px;
 }
 #bowl img {
   /* width: 37.46vw; */

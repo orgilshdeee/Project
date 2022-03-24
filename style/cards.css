@@ -10,8 +10,7 @@
   font-size: 20px;
   line-height: 30px;
   border-left: 11px solid #f17228;
-  border-collapse: separate;
-  border-spacing: 10px;
+  padding-left: 10px;
 }
 
 .nameButton {
@@ -28,11 +27,15 @@
   width: 180px;
   height: 48px;
   background: #f17228;
+}
+.seeAllButton a {
   display: flex;
   justify-content: space-evenly;
   color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
 }
-.seeAllButton img {
+.seeAllButton a img {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -45,11 +48,44 @@
 }
 .cardsInfo {
   /* width: 19.58vw; */
+  position: relative;
   width: 282px;
   height: 304px;
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
+  transition: 0.5s;
+}
+.beforeHover {
+  position: absolute;
+}
+.afterHover {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+.afterHover img {
+  width: 48px;
+  height: 41px;
+}
+.afterHover a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.cardsInfo:hover .afterHover {
+  transition: 0.5s;
+  opacity: 1;
+}
+.cardsInfo:hover .getBasket {
+  opacity: 1;
 }
 .cardsInfo h2 {
   margin: 0px 0px 0px 25px;
@@ -59,6 +95,9 @@
 }
 .cardsInfo img {
   margin: 15px 15px 0px 15px;
+}
+.afterHover p {
+  margin: auto;
 }
 .cards {
   display: flex;
