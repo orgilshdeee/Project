@@ -25,6 +25,11 @@
   border-radius: 16px;
   padding-left: 20px;
 }
+.loginSpot input[type="password"] {
+  background-image: url(../images/hide.jpg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
 .loginSpot label {
   font-weight: 250;
   font-size: 14px;
@@ -40,10 +45,12 @@
   cursor: pointer;
 }
 #goToRegButton {
+  background-color: white;
   color: #f17228;
   width: 359px;
   height: 48px;
   border: 1px solid #f17228;
+  border-radius: 20px;
   cursor: pointer;
 }
 .loginSpot p {

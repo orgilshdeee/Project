@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MStars Food Delivery</title>
     <link rel="stylesheet" href="../style/header.css" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/footer.css" />
-    <link rel="stylesheet" href="../style/loginPage.css" />
+    <link rel="stylesheet" href="../style/register.css" />
+    <title>MStars Food Delivery</title>
   </head>
   <body>
     <!-- Header starts here!! -->
@@ -44,12 +44,11 @@
 
     <!-- Header ends here!! -->
 
-    <!-- banner1 starts here!! -->
+    <!-- Register Section stars here!! -->
 
-    <!-- Login Section stars here!! -->
+    <form action="#" class="RegisterSpot contents">
+      <h1>Бүртгүүлэх</h1>
 
-    <form action="#" class="loginSpot contents">
-      <h1>Нэвтрэх</h1>
       <div>
         <label for="email">И-мэйл</label>
         <input
@@ -59,7 +58,6 @@
           placeholder="И-мэйл хаягаа оруулна уу."
         />
       </div>
-
       <div>
         <label for="password">Нууц үг</label>
         <input
@@ -69,14 +67,24 @@
           placeholder="Нууц үгээ оруулна уу."
         />
       </div>
+      <div>
+        <label for="repPassword">Нууц үг давтах</label>
+        <input
+          type="password"
+          id="repPassword"
+          name="repPassword"
+          placeholder="Нууц үгээ оруулна уу."
+        />
+      </div>
+      <div id="checkboxDiv">
+        <input type="checkbox" />
+        <p>Үйлчилгээний нөхцөл зөвшөөрөх</p>
+      </div>
 
-      <a href="#">Нууц үгээ мартсан?</a>
-      <input type="submit" value="Нэвтрэх" />
-      <p>эсвэл</p>
-      <button id="goToRegButton">Бүртгүүлэх</button>
+      <input type="submit" value="БҮРТГҮҮЛЭХ" />
     </form>
 
-    <!-- Login Section ends here!! -->
+    <!-- Register Section ends here!! -->
 
     <!-- footer starts here!! -->
 
