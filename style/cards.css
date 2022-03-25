@@ -59,6 +59,7 @@
 }
 .beforeHover {
   position: absolute;
+  z-index: 0;
 }
 .afterHover {
   position: absolute;
@@ -96,6 +97,7 @@
 }
 .cardsInfo img {
   margin: 15px 15px 0px 15px;
+  z-index: 0;
 }
 .afterHover p {
   margin: auto;
@@ -123,4 +125,22 @@
   font-size: 18px;
   line-height: 27px;
   text-decoration: line-through;
+}
+.salePercent {
+  position: absolute;
+  background: #f17228;
+  width: 75px;
+  height: 43px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0px 8px 0px 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 15px 246px 192px;
+  z-index: 1;
+}
+.salePercent p {
+  color: white;
+  margin-top: 8px;
 }

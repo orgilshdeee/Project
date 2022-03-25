@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+.loginSpot {
+  width: 384px;
+  height: 440px;
+  font-family: "Poppins";
+  margin: auto;
+  margin-top: 56px;
+  margin-bottom: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.loginSpot h1 {
+  border-left: 9px solid #f17228;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.loginSpot input[type="email"],
+[type="password"] {
+  width: 359px;
+  height: 40px;
+  border: 1px solid #ffd7bf;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding-left: 20px;
+}
+.loginSpot label {
+  font-weight: 250;
+  font-size: 14px;
+  color: #171717;
+}
+.loginSpot input[type="submit"] {
+  color: white;
+  width: 359px;
+  height: 48px;
+  background: #f17228;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+#goToRegButton {
+  color: #f17228;
+  width: 359px;
+  height: 48px;
+  border: 1px solid #f17228;
+  cursor: pointer;
+}
+.loginSpot p {
+  text-align: center;
+  align-items: center;
+  font-weight: 250;
+  font-size: 12px;
+  text-decoration-line: underline;
+  color: #828282;
+  margin: 0px 15px 0px 0px;
+}
+.loginSpot a {
+  font-weight: 400;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  float: right;
+}

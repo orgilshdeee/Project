@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../style/features.css" />
     <link rel="stylesheet" href="../style/footer.css" />
     <link rel="stylesheet" href="../style/cards.css" />
+    <link rel="stylesheet" href="../style/loginPage.css" />
   </head>
   <body>
     <!-- Header starts here!! -->
@@ -50,16 +51,27 @@
 
     <!-- Login Section stars here!! -->
 
-    <section class="loginSpot">
+    <form action="#" class="loginSpot contents">
       <h1>Нэвтрэх</h1>
-      <p>И-мэйл</p>
-      <input type="text" placeholder="И-мэйл хаягаа оруулна уу." />
-      <p>Нууц үг</p>
-      <input type="text" placeholder="Нууц үгээ оруулна уу." />
-      <p>Нууц үгээ мартсан</p>
-      <button><a href="#">Нэвтрэх</a></button>
-      <button><a href="#">Бүртгүүлэх</a></button>
-    </section>
+      <label for="email">И-мэйл</label>
+      <input
+        type="email"
+        id="email"
+        name="e-mail"
+        placeholder="И-мэйл хаягаа оруулна уу."
+      />
+      <label for="password">Нууц үг</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Нууц үгээ оруулна уу."
+      />
+      <a href="#">Нууц үгээ мартсан?</a>
+      <input type="submit" value="Нэвтрэх" />
+      <p>эсвэл</p>
+      <button id="goToRegButton">Бүртгүүлэх</button>
+    </form>
 
     <!-- Login Section ends here!! -->
 
