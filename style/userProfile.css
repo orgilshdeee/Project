@@ -22,30 +22,39 @@
   font-size: 14px;
 }
 
-input[type="text"] {
+.uProfileSpot input[type="text"] {
   width: 359px;
   height: 40px;
   border: 1px solid #f17228;
   border-radius: 16px;
   margin-top: 10px;
+  background-image: url(../images/penIcon.png);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
 ::placeholder {
   padding-left: 20px;
 }
 
-input[type="tel"] {
+.uProfileSpot input[type="tel"] {
   width: 359px;
   height: 40px;
   border: 1px solid #f17228;
   border-radius: 16px;
   margin-top: 10px;
+  background-image: url(../images/penIcon.png);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
-input[type="button"] {
+.uProfileSpot input[type="button"] {
   color: white;
-  width: 359px;
+  width: 365px;
   height: 48px;
   background: #f17228;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 20px;
+}
+.uProfileSpot div {
+  margin-bottom: 30px;
 }

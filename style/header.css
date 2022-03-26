@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
 
+/* Web starts here!! */
+body {
+  width: 100%;
+}
 header {
   width: 83.3%;
   height: 56px;
@@ -12,9 +16,14 @@ header {
   justify-content: center;
   align-items: center;
   font-weight: 700;
+  font-size: 18px;
   color: #f17228;
+  /* width: 15%; */
 }
-
+#logo img {
+  width: 40px;
+  height: 40px;
+}
 #menu {
   display: flex;
   width: 26.6vw;
@@ -78,4 +87,41 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+#searchIcon {
+  display: none;
+}
+/* Web ends here!! */
+
+@media screen and (max-width: 1200px) {
+  header {
+    height: 60px;
+  }
+  #searchBox {
+    display: none;
+  }
+  #searchIcon {
+    display: flex;
+  }
+  #searchIcon img {
+    width: 15 px;
+    height: 15px;
+  }
+  #basLog span {
+    display: none;
+  }
+  #basLog img {
+    margin: auto;
+  }
+  #menu {
+    font-size: 14px;
+    min-width: 350px;
+  }
+  #logo {
+    font-size: 16px;
+  }
+  #logo img {
+    width: 30px;
+    height: 30px;
+  }
 }

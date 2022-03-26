@@ -43,15 +43,24 @@
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins";
 }
 #goToRegButton {
-  background-color: white;
-  color: #f17228;
   width: 359px;
   height: 48px;
   border: 1px solid #f17228;
   border-radius: 20px;
   cursor: pointer;
+}
+#goToRegButton p {
+  text-decoration: none;
+  margin: auto;
+  color: #f17228;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
 }
 .loginSpot p {
   text-align: center;

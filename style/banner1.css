@@ -65,3 +65,8 @@ button {
   border-radius: 30px;
   border: none;
 }
+@media screen and (max-width: 1024px) {
+  .banner1 {
+    height: 380px;
+  }
+}
