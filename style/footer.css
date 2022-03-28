@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Web starts here!! */
+
 .footer1 {
   display: grid;
   width: 100%;
@@ -7,6 +10,11 @@
   justify-content: space-evenly;
   font-family: "Poppins";
   color: #ffffff;
+}
+.footer1 .contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 #footerLogo {
   display: flex;
@@ -19,7 +27,9 @@
 #footerLogo h2 {
   margin-top: 3%;
 }
-
+#footerBottom {
+  margin-bottom: 3%;
+}
 .footer1 hr {
   width: 83.33vw;
   border: 1px solid #ffffff;
@@ -90,3 +100,38 @@
 #bottomLeft p {
   margin-top: 0;
 }
+#bottomLeft {
+  margin-left: 2vw;
+}
+
+/* Web ends here!! */
+
+/* Media tablet starts here!! */
+
+@media screen and (max-width: 1240px) {
+  #footerLogo img {
+    width: 30px;
+    height: 30px;
+  }
+  #footerLogo h2 {
+    font-size: 16px;
+  }
+  #list1 a,
+  #list2 a {
+    font-size: 14px;
+  }
+  #otherRight {
+    flex-direction: column;
+  }
+  #bottomMiddle {
+    margin: 0px 0px 30px 0px;
+  }
+  #bottomMiddle a {
+    margin: 0px 0px 0px 20px;
+  }
+  #bottomLeft {
+    margin-left: 20px;
+  }
+}
+
+/* Media tablet ends here!! */

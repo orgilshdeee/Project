@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
 
 /* Web starts here!! */
+
 body {
   width: 100%;
 }
@@ -93,7 +94,9 @@ header {
 }
 /* Web ends here!! */
 
-@media screen and (max-width: 1200px) {
+/* Media tablet starts here!! */
+
+@media screen and (max-width: 1240px) {
   header {
     height: 60px;
   }
@@ -104,7 +107,7 @@ header {
     display: flex;
   }
   #searchIcon img {
-    width: 15 px;
+    width: 15px;
     height: 15px;
   }
   #basLog span {
@@ -114,14 +117,16 @@ header {
     margin: auto;
   }
   #menu {
-    font-size: 14px;
+    font-size: 12px;
     min-width: 350px;
   }
   #logo {
-    font-size: 16px;
+    font-size: 13px;
   }
   #logo img {
     width: 30px;
     height: 30px;
   }
 }
+
+/* Media tablet starts here!! */

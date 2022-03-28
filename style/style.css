@@ -22,3 +22,9 @@
 .banner1 .contents {
   width: 83.3%;
 }
+.features #featuresBox {
+  width: 83.3%;
+}
+.footer1 .contents {
+  margin: 0;
+}

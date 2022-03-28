@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
 
+/* Web starts here!! */
+
 .banner1 {
   width: 100%;
   height: 496px;
@@ -15,6 +17,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #bannerBottom button {
   margin: 0px 5px;
@@ -28,13 +31,11 @@
   width: 21px;
 }
 #bowl img {
-  /* width: 37.46vw; */
-  /* height: 79.55%; */
   margin: auto;
 }
 #MstarsFD {
   width: 26.67vw;
-  height: 43.54%;
+  /* height: 43.54%; */
   display: flex;
   align-items: flex-end;
 }
@@ -65,8 +66,70 @@ button {
   border-radius: 30px;
   border: none;
 }
-@media screen and (max-width: 1024px) {
+
+/* Web ends here!! */
+
+/* media Tablet starts here!!! */
+
+@media screen and (max-width: 1240px) {
+  .banner1 .contents {
+    height: 380px;
+  }
   .banner1 {
     height: 380px;
   }
+  #bowl img {
+    width: 450px;
+    height: 350px;
+  }
+  #MstarsFDright {
+    display: none;
+  }
+  #MstarsFD {
+    /* width: 340px; */
+  }
+  #MstarsFDleft h1 {
+    font-weight: 600;
+    font-size: 38px;
+  }
+  #MstarsFDleft hr {
+    border: 1.40027px solid rgba(241, 114, 40, 0.6);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    background: rgba(241, 114, 40, 0.6);
+  }
+  #MstarsFDleft p {
+    font-family: "Comfortaa";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  #bannerBottom {
+    height: 10px;
+  }
+  #bannerBottom button {
+    width: 7px;
+    height: 6px;
+    border-radius: 3.50067px;
+  }
+  #bannerBottom button:hover {
+    width: 15px;
+  }
 }
+@media screen and (max-width: 740px) {
+  #MstarsFDleft h1 {
+    font-size: 30px;
+  }
+  #MstarsFDleft p {
+    font-size: 13px;
+  }
+  #bowl img {
+    width: 420px;
+    height: 320px;
+  }
+  .banner1 .contents {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* media Tablet ends here!! */
