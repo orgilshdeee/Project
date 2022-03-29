@@ -28,16 +28,21 @@ header {
 #menu {
   display: flex;
   width: 26.6vw;
-  min-width: 500px;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  min-width: 35vw;
 }
-#menu a {
+.menuItems {
+  width: 26.6vw;
+  display: flex;
+  justify-content: space-between;
+}
+#menu .menuItems a {
   text-decoration: none;
   font-weight: 500;
   color: #000000;
 }
-#menu a:hover {
+#menu .menuItems a:hover {
   color: #f17228;
   transition: 0.2s;
 }
@@ -92,6 +97,9 @@ header {
 #searchIcon {
   display: none;
 }
+#menuDropButton {
+  display: none;
+}
 /* Web ends here!! */
 
 /* Media tablet starts here!! */
@@ -117,8 +125,11 @@ header {
     margin: auto;
   }
   #menu {
+    min-width: 40vw;
     font-size: 12px;
-    min-width: 350px;
+  }
+  .menuItems {
+    min-width: 90%;
   }
   #logo {
     font-size: 13px;
@@ -129,4 +140,61 @@ header {
   }
 }
 
-/* Media tablet starts here!! */
+/* Media tablet ends here!! */
+
+/* Media mobile starts here!! */
+
+@media screen and (max-width: 650px) {
+  header {
+    height: 90px;
+  }
+  #menuDropButton {
+    display: inline-block;
+    cursor: pointer;
+    background: white;
+    border: none;
+  }
+  .menuItems-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropBar {
+    width: 20px;
+    height: 3px;
+    background-color: #f17228;
+    margin: 4px 0;
+  }
+  #basket {
+    display: none !important;
+  }
+  #login {
+    margin: auto;
+  }
+  #searchIcon {
+    margin: auto;
+  }
+  #menu {
+    display: flex;
+    order: -1;
+    width: auto !important;
+    min-width: auto !important;
+  }
+  .show {
+    display: block;
+  }
+  #logo img {
+    width: 25px;
+    height: 25px;
+  }
+  #logo h2 {
+    font-size: 14px;
+    margin-left: 2px;
+  }
+}
+
+/* Media mobile ends here!! */

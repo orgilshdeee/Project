@@ -25,9 +25,16 @@
         <h2>Food Delivery</h2>
       </div>
       <div id="menu">
-        <a href="#">НҮҮР</a>
-        <a href="#">ХООЛНЫ ЦЭС</a>
-        <a href="#">ХҮРГЭЛТИЙН БҮС</a>
+        <button onclick="myFunction()" id="menuDropButton">
+          <div class="dropBar"></div>
+          <div class="dropBar"></div>
+          <div class="dropBar"></div>
+        </button>
+        <div id="hoverMenu" class="menuItems-content menuItems">
+          <a href="#">НҮҮР</a>
+          <a href="#">ХООЛНЫ ЦЭС</a>
+          <a href="#">ХҮРГЭЛТИЙН БҮС</a>
+        </div>
       </div>
       <div id="searchBox">
         <input type="text" placeholder="Хайх" />
@@ -69,7 +76,7 @@
             </div>
           </div>
           <div id="MstarsFDright">
-            <button>
+            <button id="slideRight">
               <a href="">
                 <img src="./images/banner/next.png" alt="" />
               </a>
@@ -560,6 +567,28 @@
     </footer>
 
     <!-- footer ends here!! -->
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("hoverMenu").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches("#menuDropButton")) {
+          var dropdowns = document.getElementsByClassName("menuItems-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
   </body>
 
   <!-- Body ends here!! -->

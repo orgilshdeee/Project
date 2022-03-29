@@ -58,7 +58,10 @@
   line-height: 120%;
 }
 
-button {
+#slideRight,
+#firstSlide,
+#secondSlide,
+#thirdSlide {
   width: 60px;
   height: 40px;
   background: rgba(255, 255, 255, 0.5);
@@ -133,3 +136,50 @@ button {
 }
 
 /* media Tablet ends here!! */
+
+/* media mobile starts here!! */
+
+@media screen and (max-width: 650px) {
+  .banner1 {
+    height: 250px;
+  }
+  .banner1 .contents {
+    height: 250px;
+    width: 100%;
+    margin-right: 7%;
+    padding-top: 10px;
+  }
+  #bowl img {
+    width: 230px;
+    height: 170px;
+  }
+  #bowl {
+    display: block;
+  }
+  #MstarsFD {
+    position: relative;
+    width: 40vw;
+  }
+  #bannerTop {
+    margin-top: 10px;
+  }
+  #bannerBottom {
+    margin-bottom: 30px;
+  }
+  #MstarsFDleft h1 {
+    font-size: 22px;
+  }
+  #MstarsFDleft p {
+    font-size: 12px;
+  }
+  #bannerBottom button {
+    width: 8px;
+    height: 5px;
+  }
+  #bannerBottom button:hover {
+    width: 12px;
+    height: 5px;
+  }
+}
+
+/* media mobile ends here!! */
