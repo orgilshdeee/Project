@@ -7,6 +7,9 @@
   height: 496px;
   background-image: url(../images/banner/background.png);
 }
+#smaller {
+  display: none;
+}
 #bannerTop {
   display: flex;
   justify-content: space-between;
@@ -39,8 +42,9 @@
   display: flex;
   align-items: flex-end;
 }
-#MstarsFD h1 {
-  font-size: 55px;
+#topPar {
+  font-family: "Poppins" !important;
+  font-size: 55px !important;
   font-weight: 600;
   line-height: 90%;
   text-align: right;
@@ -49,7 +53,8 @@
 }
 #MstarsFD hr {
   border: 2px solid rgba(241, 114, 40, 0.6);
-  margin: 0;
+  margin: 5% 0 5% 0;
+  background-color: #f17228;
 }
 #MstarsFD p {
   font-family: "Comfortaa";
@@ -91,20 +96,20 @@
   #MstarsFD {
     /* width: 340px; */
   }
-  #MstarsFDleft h1 {
-    font-weight: 600;
-    font-size: 38px;
+  #topPar {
+    font-weight: 600 !important;
+    font-size: 38px !important;
   }
   #MstarsFDleft hr {
     border: 1.40027px solid rgba(241, 114, 40, 0.6);
     transform: matrix(1, 0, 0, 1, 0, 0);
     background: rgba(241, 114, 40, 0.6);
   }
-  #MstarsFDleft p {
-    font-family: "Comfortaa";
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 120%;
+  #botPar {
+    font-family: "Comfortaa" !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 120% !important;
   }
   #bannerBottom {
     height: 10px;
@@ -145,32 +150,37 @@
   }
   .banner1 .contents {
     height: 250px;
-    width: 100%;
-    margin-right: 7%;
-    padding-top: 10px;
+    width: 95%;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
   }
-  #bowl img {
-    width: 230px;
-    height: 170px;
+  #bowl #bigger {
+    display: none;
   }
-  #bowl {
+  #bowl #smaller {
+    width: 210px;
+    height: 160px;
+  }
+  #bowl #smaller {
     display: block;
   }
-  #MstarsFD {
-    position: relative;
-    width: 40vw;
+  #bowl {
+    display: flex;
   }
-  #bannerTop {
-    margin-top: 10px;
+  #MstarsFD {
+    width: auto;
   }
   #bannerBottom {
-    margin-bottom: 30px;
+    margin: 0;
+    margin-left: 6%;
   }
-  #MstarsFDleft h1 {
-    font-size: 22px;
+
+  #topPar {
+    font-size: 22px !important;
   }
-  #MstarsFDleft p {
-    font-size: 12px;
+  #botPar {
+    font-size: 12px !important;
   }
   #bannerBottom button {
     width: 8px;

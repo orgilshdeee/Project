@@ -15,6 +15,8 @@
   line-height: 30px;
   border-left: 11px solid #f17228;
   padding-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .nameButton {
@@ -31,6 +33,9 @@
   width: 180px;
   height: 48px;
   background: #f17228;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  border: none;
 }
 .seeAllButton a {
   display: flex;
@@ -38,6 +43,11 @@
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
+  margin: auto;
+}
+.seeAllButton p {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .seeAllButton a img {
   margin-top: auto;
@@ -51,7 +61,7 @@
   height: 448px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .cardsInfo {
   position: relative;
@@ -64,8 +74,10 @@
 }
 .beforeHover {
   position: absolute;
+  margin: auto;
   z-index: 0;
 }
+
 .afterHover {
   position: absolute;
   display: flex;
@@ -96,13 +108,15 @@
   opacity: 1;
 }
 .cardsInfo h2 {
-  margin: 0px 0px 0px 25px;
+  margin: 0;
+  margin-top: 2%;
+  margin-left: 10%;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
 .cardsInfo img {
-  margin: 15px 15px 0px 15px;
+  margin: 5%;
   z-index: 0;
 }
 .afterHover p {
@@ -115,10 +129,12 @@
 }
 .prices {
   display: flex;
-  margin: 0px 0px 0px 25px;
+  /* margin: 0px 0px 0px 25px; */
+  margin-left: 10%;
 }
 .prices p {
-  margin: 0px 15px 15px 0px;
+  /* margin: 0px 15px 15px 0px; */
+  margin-right: 10%;
 }
 .normalPrice {
   font-weight: 600;
@@ -143,7 +159,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 15px 15px 246px 192px;
+  margin: 13px 13px 246px 190px;
   z-index: 1;
 }
 .salePercent p {
@@ -187,11 +203,11 @@
     margin: 10px 10px 0px 10px;
   }
   .beforeHover h2 {
-    margin: 0px 0px 0px 20px;
+    /* margin: 0px 0px 0px 20px; */
     font-size: 12px;
   }
   .prices {
-    margin: 0px 0px 0px 20px;
+    /* margin: 0px 0px 0px 20px; */
   }
   .prices p {
     font-size: 14px;
@@ -213,3 +229,35 @@
 }
 
 /* Media tablet ends here!! */
+
+/* Media mobile starts here!! */
+
+@media screen and (max-width: 650px) {
+  .cardsRow {
+    height: 260px;
+    width: 90%;
+  }
+  .mobileHide {
+    display: none;
+  }
+  .cardsInfo {
+    width: 156px;
+    height: 190px;
+  }
+  .nameButton h2 {
+    font-size: 14px;
+  }
+  .beforeHover img {
+    width: 136px;
+    height: 120px;
+  }
+  .salePercent {
+    margin: 10px 10px 153px 100px;
+    width: 46px;
+    height: 26px;
+    font-size: 14px;
+    border-radius: 0px 7px 0px 20px;
+  }
+}
+
+/* Media mobile ends here */

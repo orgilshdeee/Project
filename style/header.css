@@ -19,8 +19,12 @@ header {
   font-weight: 700;
   font-size: 18px;
   color: #f17228;
-  /* width: 15%; */
 }
+#logo p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #logo img {
   width: 40px;
   height: 40px;
@@ -146,8 +150,10 @@ header {
 
 @media screen and (max-width: 650px) {
   header {
-    height: 90px;
+    height: 50px;
+    width: 90%;
   }
+
   #menuDropButton {
     display: inline-block;
     cursor: pointer;
