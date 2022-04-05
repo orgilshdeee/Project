@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MStars Food Delivery</title>
     <link rel="stylesheet" href="../style/header.css" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/footer.css" />
-    <link rel="stylesheet" href="../style/userProfile.css" />
+    <link rel="stylesheet" href="../style/deliveryZone.css" />
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -21,7 +22,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap -->
-    <title>MStars Food Delivery</title>
   </head>
   <body>
     <!-- Header starts here!! -->
@@ -46,14 +46,14 @@
           </div>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropDownMenuButton">
-          <li><a class="dropdown-item" href="../index.html">Нүүр</a></li>
+          <li><a class="dropdown-item" href="./index.html">Нүүр</a></li>
           <li><a class="dropdown-item" href="#">ХООЛНЫ ЦЭС</a></li>
           <li><a class="dropdown-item" href="#">ХҮРГЭЛТИЙН БҮС</a></li>
         </ul>
       </div>
       <div id="menu">
         <div id="hoverMenu" class="menuItems-content menuItems">
-          <a href="../index.html">НҮҮР</a>
+          <a href="/index.html">НҮҮР</a>
           <a href="#">ХООЛНЫ ЦЭС</a>
           <a href="#">ХҮРГЭЛТИЙН БҮС</a>
         </div>
@@ -63,17 +63,17 @@
       </div>
       <div id="basLog">
         <div id="searchIcon">
-          <a href="#"><img src="../images/search icon.jpg" alt="" /></a>
+          <a href="#"><img src="./images/search icon.jpg" alt="" /></a>
         </div>
         <div id="basket">
           <a href="#">
-            <img src="../images/header/busket icon.png" alt="" />
+            <img src="/images/header/busket icon.png" alt="" />
             <span>Сагс</span>
           </a>
         </div>
         <div id="login">
-          <a href="../html/loginPage.html">
-            <img src="../images/header/user icon.png" alt="" />
+          <a href="/html/loginPage.html">
+            <img src="/images/header/user icon.png" alt="" />
             <span>Нэвтрэх</span>
           </a>
         </div>
@@ -82,33 +82,14 @@
 
     <!-- Header ends here!! -->
 
-    <!-- User Profile Section stars here!! -->
+    <!-- Delivery Zone starts here!! -->
 
-    <form action="#" class="uProfileSpot contents">
-      <h1>Хэрэглэгч</h1>
-      <div>
-        <label for="name">Нэр</label>
-        <input
-          type="text"
-          name="name"
-          id="namee"
-          placeholder="Нэрээ оруулна уу"
-        />
-      </div>
-      <div>
-        <label for="phone">Утасны дугаар</label>
-        <input
-          type="tel"
-          id="phone"
-          name="name"
-          placeholder="Дугаараа оруулна уу"
-          pattern="[0-9]{8}"
-        />
-      </div>
-      <input type="button" value="Хадгалах" />
-    </form>
+    <section class="deliveryZone contents">
+      <div class="row map"></div>
+      <div class="row"></div>
+    </section>
 
-    <!-- User Profile Section ends here!! -->
+    <!-- Deliver Zone ends here!! -->
 
     <!-- footer starts here!! -->
 

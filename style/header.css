@@ -88,9 +88,6 @@ header {
   margin: auto;
   display: flex;
 }
-/* #basLog #login {
-  display: flex;
-} */
 #basLog a {
   text-decoration: none;
   color: #f17228;
@@ -101,9 +98,10 @@ header {
 #searchIcon {
   display: none;
 }
-#menuDropButton {
+#dropDownMenu {
   display: none;
 }
+
 /* Web ends here!! */
 
 /* Media tablet starts here!! */
@@ -159,15 +157,7 @@ header {
     cursor: pointer;
     background: white;
     border: none;
-  }
-  .menuItems-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    order: -1;
   }
   .dropBar {
     width: 20px;
@@ -184,12 +174,6 @@ header {
   #searchIcon {
     margin: auto;
   }
-  #menu {
-    display: flex;
-    order: -1;
-    width: auto !important;
-    min-width: auto !important;
-  }
   .show {
     display: block;
   }
@@ -200,6 +184,22 @@ header {
   #logo h2 {
     font-size: 14px;
     margin-left: 2px;
+  }
+  #dropDownMenu {
+    display: flex;
+    order: -1;
+  }
+  #menu {
+    display: none;
+  }
+  .dropdown-item {
+    font-size: 13px;
+  }
+  .dropdown-toggle::after {
+    border: none !important;
+  }
+  #sandwichIcon {
+    margin-top: 8px;
   }
 }
 

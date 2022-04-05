@@ -11,6 +11,9 @@
   font-family: "Poppins";
   color: #ffffff;
 }
+.footer1 a {
+  color: #ffffff !important;
+}
 .footer1 .contents {
   width: 83.33vw;
   display: flex;

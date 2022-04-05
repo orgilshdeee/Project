@@ -40,7 +40,7 @@
 .seeAllButton a {
   display: flex;
   justify-content: space-evenly;
-  color: #ffffff;
+  color: #ffffff !important;
   cursor: pointer;
   text-decoration: none;
   margin: auto;
@@ -98,6 +98,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: white !important;
   text-decoration: none;
 }
 .cardsInfo:hover .afterHover {

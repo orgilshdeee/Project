@@ -37,14 +37,29 @@
         <img src="./images/header/headerImage.png" alt="" />
         <p>Food Delivery</p>
       </div>
-      <div id="menu">
-        <button onclick="myFunction()" id="menuDropButton">
-          <div class="dropBar"></div>
-          <div class="dropBar"></div>
-          <div class="dropBar"></div>
+      <div class="dropdown" id="dropDownMenu">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          id="dropDownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <div id="sandwichIcon">
+            <div class="dropBar"></div>
+            <div class="dropBar"></div>
+            <div class="dropBar"></div>
+          </div>
         </button>
+        <ul class="dropdown-menu" aria-labelledby="dropDownMenuButton">
+          <li><a class="dropdown-item" href="./index.html">Нүүр</a></li>
+          <li><a class="dropdown-item" href="#">ХООЛНЫ ЦЭС</a></li>
+          <li><a class="dropdown-item" href="#">ХҮРГЭЛТИЙН БҮС</a></li>
+        </ul>
+      </div>
+      <div id="menu">
         <div id="hoverMenu" class="menuItems-content menuItems">
-          <a href="#">НҮҮР</a>
+          <a href="/index.html">НҮҮР</a>
           <a href="#">ХООЛНЫ ЦЭС</a>
           <a href="#">ХҮРГЭЛТИЙН БҮС</a>
         </div>
@@ -550,7 +565,7 @@
               <ul>
                 <li><a href="#">Нүүр</a></li>
                 <li><a href="#">Хоолны цэс</a></li>
-                <li><a href="#">Хүргэлтийн бүс</a></li>
+                <li><a href="./html/deliveryZone.html">Хүргэлтийн бүс</a></li>
               </ul>
             </div>
             <div id="list2">
@@ -598,28 +613,6 @@
     </footer>
 
     <!-- footer ends here!! -->
-
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("hoverMenu").classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches("#menuDropButton")) {
-          var dropdowns = document.getElementsByClassName("menuItems-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-    </script>
   </body>
 
   <!-- Body ends here!! -->
