@@ -9,7 +9,7 @@ header {
   width: 83.3%;
   height: 56px;
   font-family: "Poppins";
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
 }
 #logo {
