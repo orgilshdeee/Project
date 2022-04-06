@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Web starts here!! */
+
+.banner1 {
+  width: 100%;
+  height: 496px;
+}
+#smaller {
+  display: none;
+}
+#bannerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins";
+}
+#bannerBottom {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bannerBottom button {
+  margin: 0px 5px;
+  width: 10px;
+  height: 8px;
+  background-color: #fbc5a6;
+}
+#bannerBottom button:hover {
+  transition: 0.3s;
+  background-color: #f17228;
+  width: 21px;
+}
+#bowl img {
+  margin: auto;
+}
+#MstarsFD {
+  width: 26.67vw;
+  /* height: 43.54%; */
+  display: flex;
+  align-items: flex-end;
+}
+#topPar {
+  font-family: "Poppins" !important;
+  font-size: 55px !important;
+  font-weight: 600;
+  line-height: 90%;
+  text-align: right;
+  color: #f17228;
+  letter-spacing: 0.01em;
+}
+#MstarsFD hr {
+  border: 2px solid rgba(241, 114, 40, 0.6);
+  margin: 5% 0 5% 0;
+  background-color: #f17228;
+}
+#MstarsFD p {
+  font-family: "Comfortaa";
+  font-size: 22px;
+  text-align: right;
+  line-height: 120%;
+}
+
+#slideRight,
+#firstSlide,
+#secondSlide,
+#thirdSlide {
+  width: 60px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(251, 197, 166, 0.2);
+  border-radius: 30px;
+  border: none;
+}
+#botPar {
+  color: #4d2000;
+}
+.carousel-control-next-icon {
+  background-image: url(/images/banner/next.png) !important;
+}
+.carousel-control-prev-icon {
+  background-image: url(/images/banner/prev.png) !important;
+}
+.carousel-control-next {
+  width: 60px !important;
+  height: 40px !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 10px rgba(251, 197, 166, 0.2) !important;
+  border-radius: 30px !important;
+  margin: auto;
+  margin-right: 7.5%;
+}
+.carousel-control-prev {
+  width: 60px !important;
+  height: 40px !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 10px rgba(251, 197, 166, 0.2) !important;
+  border-radius: 30px !important;
+  margin: auto;
+  margin-left: 7.5%;
+}
+.sliderImgs {
+  height: 496px;
+}
+.carousel-indicators li {
+  width: 10px !important;
+  height: 8px !important;
+  background-color: #fbc5a6 !important;
+  box-shadow: 0px 0px 10px rgba(251, 197, 166, 0.2) !important;
+  border-radius: 30px !important;
+}
+.carousel-indicators li.active {
+  transition: 0.5s;
+  width: 21px !important;
+  background-color: #f17228 !important;
+}
+#slider2par {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90%;
+  margin: 20% 0 20% 50%;
+  text-align: right;
+}
+#slider3par {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90%;
+  margin: 20% 0 20% 50%;
+  text-align: right;
+}
+
+/* Web ends here!! */
+
+/* media Tablet starts here!!! */
+
+@media screen and (max-width: 1240px) {
+  .banner1 .contents {
+    height: 380px;
+  }
+  .banner1 {
+    height: 380px;
+  }
+  .sliderImgs {
+    height: 380px;
+  }
+  #bowl img {
+    width: 450px;
+    height: 350px;
+  }
+  #MstarsFDright {
+    display: none;
+  }
+  #topPar {
+    font-weight: 600 !important;
+    font-size: 38px !important;
+  }
+  #MstarsFDleft hr {
+    border: 1.40027px solid rgba(241, 114, 40, 0.6);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    background: rgba(241, 114, 40, 0.6);
+  }
+  #botPar {
+    font-family: "Comfortaa" !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 120% !important;
+  }
+  #bannerBottom {
+    height: 10px;
+  }
+  #bannerBottom button {
+    width: 7px;
+    height: 6px;
+    border-radius: 3.50067px;
+  }
+  #bannerBottom button:hover {
+    width: 15px;
+  }
+  #slider2par {
+    font-size: 40px;
+  }
+  #slider3par {
+    font-size: 40px;
+  }
+  .carousel-indicators li {
+    width: 7px !important;
+    height: 6px !important;
+  }
+  .carousel-indicators li.active {
+    width: 15px !important;
+  }
+  .carousel-control-next {
+    display: none !important;
+  }
+  .carousel-control-prev {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 740px) {
+  #MstarsFDleft h1 {
+    font-size: 30px;
+  }
+  #MstarsFDleft p {
+    font-size: 13px;
+  }
+  #bowl img {
+    width: 420px;
+    height: 320px;
+  }
+  .banner1 .contents {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* media Tablet ends here!! */
+
+/* media mobile starts here!! */
+
+@media screen and (max-width: 650px) {
+  .banner1 {
+    height: 250px;
+  }
+  .banner1 .contents {
+    height: 250px;
+    width: 95%;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sliderImgs {
+    height: 250px;
+  }
+  #bowl #bigger {
+    display: none;
+  }
+  #bowl #smaller {
+    width: 210px;
+    height: 160px;
+  }
+  #bowl #smaller {
+    display: block;
+  }
+  #bowl {
+    display: flex;
+  }
+  #MstarsFD {
+    width: auto;
+  }
+  #bannerBottom {
+    margin: 0;
+    margin-left: 6%;
+  }
+
+  #topPar {
+    font-size: 22px !important;
+  }
+  #botPar {
+    font-size: 12px !important;
+  }
+  #bannerBottom button {
+    width: 8px;
+    height: 5px;
+  }
+  #bannerBottom button:hover {
+    width: 12px;
+    height: 5px;
+  }
+  #slider2par {
+    font-size: 22px;
+  }
+  #slider3par {
+    font-size: 22px;
+  }
+  .carousel-indicators li {
+    width: 8px !important;
+    height: 5px !important;
+  }
+  .carousel-indicators li.active {
+    width: 12px !important;
+  }
+}
+
+/* media mobile ends here!! */

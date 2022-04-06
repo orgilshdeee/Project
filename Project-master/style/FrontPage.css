@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+/* Header */
+
+header {
+  background: #ffffff;
+  width: 1440px;
+  height: 56px;
+  left: 1px;
+  top: -0.4px;
+  box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
+  position: fixed;
+  flex-wrap: nowrap;
+  font-family: "Poppins";
+  margin: 0;
+}
+
+/* Header Home starts here!!*/
+
+header .Home {
+  margin-left: 120px;
+  display: flex;
+}
+header .Home p {
+  font-size: 18px;
+  color: #f17228;
+  margin: 13px 0 13px 10px;
+}
+
+header .Home img {
+  height: 40px;
+  width: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+header .HeaderMenus {
+  padding: 0;
+  margin: 16px 0px 16px 138px;
+}
+header ul .HeaderMenus ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+header ul .HeaderMenus ul li {
+  margin-left: 41px;
+}
+header .topMenu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header .HeaderMenus .coloredMenu {
+  color: #f17228;
+  margin-left: 0px;
+}
+
+.searchBox input {
+  background-image: url(../images/header/searchIcon.png);
+  background-repeat: no-repeat;
+  width: 235px;
+  height: 32px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fbc5a6;
+  margin: 12px 0px 12px 80px;
+}
+a {
+  text-decoration: none;
+}
+.basket {
+  color: #f17228;
+  margin: 15px 0px 15px 32.5px;
+}
+.login {
+  color: #f17228;
+  margin: 15px 129.5px 15px 20px;
+}
+.basket img {
+  height: 14px;
+  width: 16px;
+}
+.login img {
+  height: 14px;
+  width: 13px;
+}
+
+/* Slider starts here!! */
+
+header .slider {
+  height: 496px;
+  width: 1440px;
+  background-image: url(../images/header/slider.png);
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 110px;
+  display: flex;
+}
+
+header .slider .bowls {
+  width: 588px;
+  height: 400px;
+  /* margin: 48px 0px 48px 120px; */
+}
+header .slider .bowls .bowl1 {
+  /* width: 305px;
+  height: 369.08px;*/
+  position: absolute;
+  margin: 15.46px 0px 15.46px 60.25px;
+}
+header .slider .bowls .bowl2 {
+  /* width: 345px;
+  height: 311px; */
+  position: absolute;
+  margin: 64px 0px 20px 182.75px;
+}
+header .slider .MstarsFD {
+  width: 486px;
+  height: 216px;
+  margin: 48px 120px 136px 145px;
+}
+header .slider .MstarsFD h3 {
+  color: #f17228;
+  width: 384px;
+  height: 120px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90%;
+  text-align: right;
+  justify-content: flex-end;
+  margin: 0px 102px 0px 0px;
+}
+header .slider .MstarsFD hr {
+  border: 2px solid rgba(241, 114, 40, 0.6);
+  width: 383px;
+  margin: 0;
+}
+header .slider .MstarsFD p {
+  font-family: "Comfortaa";
+  width: 384px;
+  height: 64px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+}
+header .button {
+  width: 60px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(251, 197, 166, 0.2);
+  border-radius: 30px;
+  border: none;
+  position: absolute;
+  margin: 0;
+}
+header .buttonDiv {
+  width: 60px;
+  height: 40px;
+  margin: 180px 0px 180px -180px;
+}
+
+/* Header ends here!! */
+
+body .features {
+  width: 1440px;
+  height: 248px;
+  background: linear-gradient(
+    179.24deg,
+    #f17228 -90.18%,
+    rgba(255, 255, 255, 0) 41.19%
+  );
+}

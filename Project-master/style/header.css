@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Web starts here!! */
+
+body {
+  width: 100%;
+}
+header {
+  width: 83.3%;
+  height: 56px;
+  font-family: "Poppins";
+  display: flex !important;
+  justify-content: space-between;
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #f17228;
+}
+#logo p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+}
+#menu {
+  display: flex;
+  width: 26.6vw;
+  justify-content: center;
+  align-items: center;
+  min-width: 35vw;
+}
+.menuItems {
+  width: 26.6vw;
+  display: flex;
+  justify-content: space-between;
+}
+#menu .menuItems a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000000;
+}
+#menu .menuItems a:hover {
+  color: #f17228;
+  transition: 0.2s;
+}
+
+#searchBox {
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#searchBox input {
+  width: 16.3vw;
+  height: 32px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fbc5a6;
+  background-image: url(/images/header/searchIcon.png);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  padding-left: 12%;
+}
+
+#searchBox input::placeholder {
+  font-size: 14px;
+}
+
+#basLog {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 12.5vw;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+#basLog img {
+  margin: auto;
+}
+#basLog #basket {
+  margin: auto;
+  display: flex;
+}
+#basLog a {
+  text-decoration: none;
+  color: #f17228;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+#searchIcon {
+  display: none;
+}
+#dropDownMenu {
+  display: none;
+}
+
+/* Web ends here!! */
+
+/* Media tablet starts here!! */
+
+@media screen and (max-width: 1240px) {
+  header {
+    height: 60px;
+  }
+  #searchBox {
+    display: none;
+  }
+  #searchIcon {
+    display: flex;
+  }
+  #searchIcon img {
+    width: 15px;
+    height: 15px;
+  }
+  #basLog span {
+    display: none;
+  }
+  #basLog img {
+    margin: auto;
+  }
+  #menu {
+    min-width: 40vw;
+    font-size: 12px;
+  }
+  .menuItems {
+    min-width: 90%;
+  }
+  #logo {
+    font-size: 13px;
+  }
+  #logo img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Media tablet ends here!! */
+
+/* Media mobile starts here!! */
+
+@media screen and (max-width: 650px) {
+  header {
+    height: 50px;
+    width: 90%;
+  }
+
+  #menuDropButton {
+    display: inline-block;
+    cursor: pointer;
+    background: white;
+    border: none;
+    order: -1;
+  }
+  .dropBar {
+    width: 20px;
+    height: 3px;
+    background-color: #f17228;
+    margin: 4px 0;
+  }
+  #basket {
+    display: none !important;
+  }
+  #login {
+    margin: auto;
+  }
+  #searchIcon {
+    margin: auto;
+  }
+  .show {
+    display: block;
+  }
+  #logo img {
+    width: 25px;
+    height: 25px;
+  }
+  #logo h2 {
+    font-size: 14px;
+    margin-left: 2px;
+  }
+  #dropDownMenu {
+    display: flex;
+    order: -1;
+  }
+  #menu {
+    display: none;
+  }
+  .dropdown-item {
+    font-size: 13px;
+  }
+  .dropdown-toggle::after {
+    border: none !important;
+  }
+  #sandwichIcon {
+    margin-top: 8px;
+  }
+}
+
+/* Media mobile ends here!! */
