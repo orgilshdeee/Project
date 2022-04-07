@@ -42,6 +42,10 @@
   margin-right: 2.5%;
   cursor: pointer;
 }
+.menuSelect a:hover {
+  color: #f17228 !important;
+  text-decoration: none;
+}
 .lastRow {
   width: 50% !important;
   margin-bottom: 10%;

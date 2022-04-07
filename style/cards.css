@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 /* Web starts here!! */
+* {
+  box-sizing: border-box;
+}
 
 .cardsMain {
   width: 100%;
@@ -174,19 +177,103 @@
   padding: 3px;
   transform: rotate(-45deg);
 }
-.modalBtn{
+.modalBtn {
   color: white !important;
   border: none !important;
   box-shadow: none !important;
 }
-.modal-dialog-centered{
-  float: right;
+.modalLeft {
+  padding-left: 0 !important;
 }
-
-.modal-content{
-  width: 60% !important;
+.modalLeft img {
+  width: 100%;
+  margin: auto;
 }
-
+.modalFoodName {
+  font-weight: 600;
+  font-size: 16px;
+}
+.modalFoodPrice {
+  font-weight: 600;
+  font-size: 18px;
+  color: #f17228;
+  text-align: end;
+}
+.modal-content {
+  overflow: hidden;
+}
+.modalHR {
+  border: 1px solid #f3f3f3;
+}
+.orts {
+  font-weight: 600;
+  font-size: 16px;
+}
+.modalIngred {
+  font-weight: 400;
+  font-size: 15px;
+  background: #f7f8f7;
+  border-radius: 10px;
+}
+.exitBtn {
+  width: auto;
+}
+.counts {
+  font-weight: 600;
+  font-size: 16px;
+}
+.modalForm {
+  padding: 0 !important;
+}
+.modalForm input[type="radio"] {
+  display: none;
+}
+.modalMid input[type="number"] {
+  background: #fff1e9;
+  border-radius: 10px;
+  border: none;
+}
+.modalLab {
+  background: #ffffff;
+  border: 1px solid #fbc5a6;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.modalLab span {
+  display: flex;
+  justify-content: center;
+  color: #f17228;
+}
+#people1:checked:checked ~ .modalLab1,
+#people2:checked:checked ~ .modalLab2 {
+  transition: all 0.3s ease;
+  background: #f17228;
+}
+#people1:checked:checked ~ .modalLab1 span,
+#people2:checked:checked ~ .modalLab2 span {
+  transition: all 0.3s ease;
+  color: white;
+}
+.formEndBtn {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  background: #f17228;
+  width: 100%;
+  border: none;
+}
+.minusBtn,
+.plusBtn {
+  background: #f17228;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Web ends here!! */
 
 /* Media tablet starts here!! */

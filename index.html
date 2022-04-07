@@ -133,7 +133,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item slider1bg active">
             <img
               class="d-block w-100 sliderImgs"
               src="/images/banner/background.png"
@@ -159,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item slide2bg">
             <img
               class="d-block w-100 sliderImgs"
               src="/images/banner/banner2.jpg"
@@ -169,7 +169,7 @@
               <p id="slider2par">Сэт хоол гарч эхэллээ.</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item slider3bg">
             <img
               class="d-block w-100 sliderImgs"
               src="/images/banner/banner3.jpg"
@@ -270,43 +270,111 @@
               </div>
 
               <div class="afterHover">
-                <button type="button" class="btn modalBtn" data-toggle="modal" data-target="#exampleModalCenter">
+                <button
+                  type="button"
+                  class="btn modalBtn"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
                   <img src="/images/cardImg's/hoverBasket.png" alt="" />
-                      <p>Сагслах</p>
+                  <p>Сагслах</p>
                 </button>
               </div>
               <!-- Modal -->
-              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog-centered" role="document">
+              <div
+                class="modal fade"
+                id="exampleModalCenter"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-lg modal-dialog-centered"
+                  role="document"
+                >
                   <div class="modal-content">
                     <div class="modal-body d-flex">
-                      <div class=""><img src="./images/cardImg's/onSaleImg/icecream.png" alt=""></div>
-                      <div class="">
-                        <div class="col">
-                          <div class="row d-flex">
-                            <p>Хулууны зутан</p>
-                            <p>6,800₮</p>
+                      <div class="col modalLeft">
+                        <img
+                          src="../images/cardImg's/onSaleImg/icecream.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col modalRight">
+                        <div class="row d-flex mb-4">
+                          <div class="col modalFoodName px-0">
+                            Хулууны зутан
                           </div>
-                          <div class="row">
-                            <p>Орц</p>
-                            <div id="ingredientBox">
-                              Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр  
-                            </div>
-                          </div>
-                          <div class="row">
-                            <p>Тоо</p>
-                            <div>tooluur</div>
-                          </div>
-                          <div class="row">
-                            sagslah
-                          </div>
+                          <div class="col modalFoodPrice">6,800₮</div>
                         </div>
-                        <div class="col">exit button</div>
+                        <!-- <div class="row">
+                          <hr class="modalHR" />
+                        </div> -->
+                        <div class="row orts mb-2">Орц</div>
+                        <div
+                          class="row modalIngred px-2 pe-3 mb-3"
+                          id="ingredientBox"
+                        >
+                          <p class="py-2">
+                            Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын
+                            үр
+                          </p>
+                        </div>
+                        <div class="row counts mb-2">Тоо</div>
+                        <div class="row mb-3 modalMid">
+                          <button class="col-1 minusBtn">-</button>
+                          <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            class="col mx-5"
+                            value=""
+                          />
+                          <button class="col-1 plusBtn">+</button>
+                        </div>
+
+                        <div class="row mb-2">
+                          <form action="#" class="modalForm">
+                            <div class="row">
+                              <div class="col">
+                                <input
+                                  type="radio"
+                                  id="people1"
+                                  name="pplCounter"
+                                  checked
+                                />
+                                <label for="people1" class="modalLab modalLab1">
+                                  <span>1 хүн</span>
+                                </label>
+                              </div>
+                              <div class="col">
+                                <input
+                                  type="radio"
+                                  id="people2"
+                                  name="pplCounter"
+                                  value="2person"
+                                />
+                                <label for="people2" class="modalLab modalLab2">
+                                  <span>2 хүн</span>
+                                </label>
+                              </div>
+                            </div>
+                            <div>
+                              <input
+                                type="submit"
+                                value="Сагслах"
+                                class="formEndBtn"
+                              />
+                            </div>
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- Modal ending -->
               <div class="salePercent">
                 <p>20%</p>
               </div>
